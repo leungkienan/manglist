@@ -33,16 +33,16 @@ body {
 }
 
 #menu[data-active-index='0'] > #menu-background-image {
-  background-position: center 45%;
+  background-position: center 35%;
 }
 #menu[data-active-index='1'] > #menu-background-image {
   background-position: center 50%;
 }
 #menu[data-active-index='2'] > #menu-background-image {
-  background-position: center 55%;
+  background-position: center 65%;
 }
 #menu[data-active-index='3'] > #menu-background-image {
-  background-position: center 60%;
+  background-position: center 80%;
 }
 
 #menu-background-pattern {
@@ -100,7 +100,7 @@ body {
   cursor: pointer;
   display: block;
   font-family: Arial, Helvetica, sans-serif;
-  font-size: clamp(1rem, 2.5vw, 2.5rem);
+  font-size: clamp(2rem, 6vw, 6rem);
   padding: clamp(0.25rem, 0.5vw, 1rem) 0rem;
   text-decoration: none;
   transition: opacity 400ms ease;
