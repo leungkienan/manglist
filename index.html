@@ -4,31 +4,29 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="/style.css" />
-    <script src="/app.js" type="text/javascript"></script>
+    <link rel="stylesheet" href="/src/style.css" />
     <title>Document</title>
   </head>
   <body>
     <div id="menu">
       <div id="menu-items">
-        <a href="/profile" class="menu-item">Profile</a>
-        <a href="/search" class="menu-item">Search</a>
-        <a href="/my-manga" class="menu-item">My Manga</a>
-        <a href="/new" class="menu-item">New & Trending</a>
+        <div id="profile" class="menu-item">Profile</div>
+        <div id="search" class="menu-item">Search</div>
+        <div id="myList" class="menu-item">My List</div>
+        <div id="new" class="menu-item">New & Trending</div>
       </div>
-      <!-- <div id="menu-background-pattern"></div> -->
+      <!-- <div id="like-button-root"></div> -->
       <div id="menu-background-image"></div>
     </div>
+    <script
+      src="https://unpkg.com/react@18/umd/react.development.js"
+      crossorigin
+    ></script>
+    <script
+      src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"
+      crossorigin
+    ></script>
+    <!-- <script src="/like-button.js"></script> -->
   </body>
-  <script>
-    const menu = document.getElementById('menu')
-
-    Array.from(document.getElementsByClassName('menu-item')).forEach(
-      (item, index) => {
-        item.onmouseover = () => {
-          menu.dataset.activeIndex = index
-        }
-      }
-    )
-  </script>
+  <script src="/app.js"></script>
 </html>
