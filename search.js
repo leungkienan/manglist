@@ -1,23 +1,22 @@
 'use strict'
 
-function Search() {
-  const [liked, setLiked] = React.useState(false)
+function SearchPortal() {
+  const [searched, searchWindow] = React.useState(false)
 
-  if (liked) {
-    // need to change the text to a search bar with the same properties as the text
-    // or create a search page with the same css
-    return 'You liked this!'
+  if (searched) {
+    return (
+      <div>
+        <input id="searchField"></input>
+      </div>
+    )
   }
-
-  return React.createElement(
-    'button',
-    {
-      onClick: () => setLiked(true),
-    },
-    'Like'
+  return (
+    <button id="newSearch" onClick={() => searchWindow(true)}>
+      Search
+    </button>
   )
 }
 
-const rootNode = document.getElementById('like-button-root')
+const rootNode = document.getElementById('search')
 const root = ReactDOM.createRoot(rootNode)
-root.render(React.createElement(LikeButton))
+root.render(React.createElement(SearchPortal))
