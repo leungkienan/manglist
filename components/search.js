@@ -4,9 +4,10 @@ function SearchPortal() {
   const [searched, searchWindow] = React.useState(false)
 
   if (searched) {
+    // send query to backend which taps into jikan api to return results.
     return (
       <div>
-        <input id="searchField"></input>
+        <input id="searchField" placeholder="Enter a manga..."></input>
       </div>
     )
   }

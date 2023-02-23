@@ -33,18 +33,18 @@ body {
 }
 
 #menu[data-active-index='0'] > #menu-background-image {
-  background-position: center 35%;
+  background-position: center 45%;
 }
 #menu[data-active-index='1'] > #menu-background-image {
   background-position: center 50%;
 }
 #menu[data-active-index='2'] > #menu-background-image {
-  background-position: center 65%;
+  background-position: center 55%;
 }
 #menu[data-active-index='3'] > #menu-background-image {
-  background-position: center 80%;
+  background-position: center 60%;
 }
-
+/* 
 #menu-background-pattern {
   background-image: radial-gradient(
     rgba(255, 255, 255, 0.1) 9%,
@@ -60,7 +60,7 @@ body {
     background-position 800ms ease;
   width: 100vw;
   z-index: 1;
-}
+} */
 
 #menu-background-image {
   height: 100%;
@@ -120,9 +120,10 @@ body {
 }
 
 #searchField{
-  background-color: rgba(20, 20, 20, .8);
-  border-radius: 1rem;
-  border-color: white;
+  background-color: rgba(20, 20, 20, 0);
+  border:none;
+  outline:none;
+  text-decoration:none;
   color:white;
   font-size: clamp(2rem, 6vw, 6rem);
   padding: clamp(0.25rem, 0.5vw, 1rem) 0rem;
