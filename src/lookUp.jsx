@@ -1,6 +1,6 @@
-'use strict'
+import React from 'react'
 
-function SearchPortal() {
+export default function SearchPortal() {
   const [searched, searchWindow] = React.useState(false)
 
   if (searched) {
@@ -21,3 +21,14 @@ function SearchPortal() {
 const rootNode = document.getElementById('search')
 const root = ReactDOM.createRoot(rootNode)
 root.render(React.createElement(SearchPortal))
+
+// class SearchPortal extends React.Component{
+//   render()
+// }
+
+// class Search extends React.Component {
+//   constructor(props) {
+//     super(props)
+//     this.state = {}
+//   }
+// }
