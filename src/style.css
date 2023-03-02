@@ -89,9 +89,9 @@ body {
   transition: opacity 400ms ease;
 }
 
-#newSearch{
-  background:none;
-  border:none;
+#newSearch {
+  background: none;
+  border: none;
   color: white;
   cursor: pointer;
   display: block;
@@ -102,18 +102,12 @@ body {
   text-decoration: none;
 }
 
-#searchField{
+#searchField {
   background-color: rgba(20, 20, 20, 0);
-  border:none;
-  outline:none;
-  text-decoration:none;
-  color:white;
+  border: none;
+  outline: none;
+  text-decoration: none;
+  color: white;
   font-size: clamp(2rem, 6vw, 6rem);
-  padding: clamp(0.25rem, 0.5vw, 1rem) 0rem;
-}
-
-#searchButton{
-  font-size: clamp(2rem, 0.5vw, 1rem) 0rem;
-  color:white;
   padding: clamp(0.25rem, 0.5vw, 1rem) 0rem;
 }
